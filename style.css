@@ -70,7 +70,7 @@ width: 150px;
 }
 .ques .fade-out {
   opacity: 1;
-  transition: opacity 3s ease-out; /* Add transition for smooth effect */
+  transition: opacity 0.4s ease-out; /* Add transition for smooth effect */
 }
 
 .ques .fade-out.fade-out-complete {
