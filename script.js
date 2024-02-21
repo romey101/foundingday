@@ -4,7 +4,7 @@ const element = document.getElementById('element');
 element.addEventListener('transitionend', () => {
   if (element.classList.contains('fade-out-complete')) {
     // Navigate to another page when fade-out animation completes
-    window.location.href = './ques.html'; // Replace with your desired URL
+    window.location.href = 'ques.html'; // Replace with your desired URL
   }
 });
 

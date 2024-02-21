@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "MyArabicFont";
-  src: url(images/Harir_complete_OTF_Harir_Bold.otf);
+  font-family: "MyArabicFont"; /* Replace with your font name */
+  src: url("images/Harir_complete_OTF_Harir_Bold.otf") format("woff");
 }
 
 * {
@@ -10,90 +10,134 @@
   font-family: "MyArabicFont";
 }
 
-body {
+
+body{
   align-items: center;
   text-align: center;
-  overflow-x: hidden; /* Disable horizontal scrolling */
 }
 
 body img {
-  width: 150px;
-  max-width: 100%; /* Ensure images don't exceed their container */
+width: 150px;
+
 }
 
 /* header start */
-.container {
-  width: 100%;
-  background-color: #FFFFFF;
-  background-size: cover;
-  position: sticky;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+.container{
+width: 100%;
+background-color: #FFFFFF;
+background-size: cover;
+position: sticky;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+
 }
 
-nav {
+nav{
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: sticky;
+
 }
 
-.clublogo {
-  width: 70px;
+
+
+.clublogo{
+width: 70px;
   cursor: pointer;
+  
 }
 
-.foundinglogo {
-  width: 150px;
+
+.foundinglogo{
+width: 150px;
   display: flex;
   align-items: center;
   cursor: pointer;
+
 }
 
 /* header ended */
 
 /* question start */
-.quescontainer {
+
+.ques{
+  position: absolute;
+  top: 50%; /* Position at 50% from the top */
+  left: 50%; /* Position at 50% from the left */
+  transform: translate(-50%, -50%); /* Center the element */
+}
+.ques .fade-out {
+  opacity: 1;
+  transition: opacity 3s ease-out; /* Add transition for smooth effect */
+}
+
+.ques .fade-out.fade-out-complete {
+  opacity: 0; /* Change opacity on hover to create fade-out effect */
+}
+
+.quescontainer{
   background-image: url(images/68548e61-baaf-4ad0-8057-46cdab6513bd.png);
   background-size: 300px;
   width: 300px;
   height: 200px;
+  /* border: 2px solid #6d4c41; */
   border-radius: 10px;
   background-color: transparent;
   text-align: center;
   font-size: 16px;
   color: #333;
   font-family: Arial, sans-serif;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: absolute; 
+  top:40%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+}
+.button-container{
+width: 330px;
+height: 200px;
+/* border: 2px solid #6d4c41; */
+background-color: transparent;
+text-align: center;
+font-size: 16px;
+font-family: Arial, sans-serif;
+position: absolute; 
+top:75%; 
+left: 50%; 
+transform: translate(-50%, -50%);
 }
 
-.button-container {
-  width: 90%; /* Adjusted for smaller screens */
-  max-width: 330px; /* Limit maximum width */
-  height: 200px;
-  background-color: transparent;
-  text-align: center;
-  font-size: 16px;
-  font-family: Arial, sans-serif;
-  position: absolute;
-  top: 75%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
 .button-container button {
   background-color: rgba(255, 255, 255, 0.5);
   padding: 10px 40px;
-  box-shadow: 0px 2px 6px #6b4e459a;
+  box-shadow: 0px 2px 6px  #6b4e459a;
   border-radius: 5px;
   border: none;
   cursor: pointer;
-  color: #231f20;
+  color: #231f20; /* Adjust text color as needed */
   margin: 12px;
   margin-bottom: 12px;
+}
+
+.top-left {
+  top: 0;
+  left: 0;
+}
+
+.top-right {
+  top: 0;
+  right: 0;
+}
+
+.bottom-left {
+  bottom: 0;
+  left: 0;
+}
+
+.bottom-right {
+  bottom: 0;
+  right: 0;
 }
 
 /* question ended */
@@ -111,12 +155,14 @@ nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex; /* Use flexbox for better alignment */
-  justify-content: center; /* Center the links horizontally */
+  display: inline; /* Ensure the list items are displayed inline */
+
 }
 
 nav ul li {
-  margin: 0 10px; /* Adjust spacing between links */
+  display: inline;
+  margin: 0; /* Adjust spacing between links */
+  text-align: center; /* Center the content within each list item */
 }
 
 nav ul li:last-child {
@@ -124,24 +170,13 @@ nav ul li:last-child {
 }
 
 nav ul li a {
-  color: #F4EADA;
+  color: #F4EADA; /* Text color */
+
+
 }
 
 nav ul li a:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Add underline on hover */
 }
 
-/* footer ends */
-
-/* Media Query for iPhone */
-@media screen and (max-width: 375px) {
-  .quescontainer {
-    width: 90%; /* Adjusted width for smaller screens */
-    max-width: 300px; /* Limit maximum width */
-  }
-
-  .button-container {
-    width: 90%; /* Adjusted width for smaller screens */
-    max-width: 300px; /* Limit maximum width */
-  }
-}
+/* footer ends */ 
