@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "MyArabicFont";
+  src: url(images/Harir_complete_OTF_Harir_Bold.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "MyArabicFont";
+}
+
+body {
+  align-items: center;
+  text-align: center;
+  overflow-x: hidden; /* Disable horizontal scrolling */
+}
+
+body img {
+  width: 150px;
+  max-width: 100%; /* Ensure images don't exceed their container */
+}
+
+/* header start */
+.container {
+  width: 100%;
+  background-color: #FFFFFF;
+  background-size: cover;
+  position: sticky;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+}
+
+.clublogo {
+  width: 70px;
+  cursor: pointer;
+}
+
+.foundinglogo {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* header ended */
+
+/* question start */
+.quescontainer {
+  background-image: url(images/68548e61-baaf-4ad0-8057-46cdab6513bd.png);
+  background-size: 300px;
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: transparent;
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+  font-family: Arial, sans-serif;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button-container {
+  width: 90%; /* Adjusted for smaller screens */
+  max-width: 330px; /* Limit maximum width */
+  height: 200px;
+  background-color: transparent;
+  text-align: center;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button-container button {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px 40px;
+  box-shadow: 0px 2px 6px #6b4e459a;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: #231f20;
+  margin: 12px;
+  margin-bottom: 12px;
+}
+
+/* question ended */
+
+/* footer start */
+footer {
+  background-color: #231f20;
+  padding: 25px;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Use flexbox for better alignment */
+  justify-content: center; /* Center the links horizontally */
+}
+
+nav ul li {
+  margin: 0 10px; /* Adjust spacing between links */
+}
+
+nav ul li:last-child {
+  margin-right: 0; /* Remove margin from the last link */
+}
+
+nav ul li a {
+  color: #F4EADA;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* footer ends */
+
+/* Media Query for iPhone */
+@media screen and (max-width: 375px) {
+  .quescontainer {
+    width: 90%; /* Adjusted width for smaller screens */
+    max-width: 300px; /* Limit maximum width */
+  }
+
+  .button-container {
+    width: 90%; /* Adjusted width for smaller screens */
+    max-width: 300px; /* Limit maximum width */
+  }
+}
